@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate')%>
+<div class="container d-flex justify-content-center center mt-5">
+  <div class="row col-lg-5 col-xs-12">
+    <div class="card shadow background">
+      <div class="card-body">
+        <h4 class="card-title">Login</h4>
+        <form action="/login" method="POST" class="validated-form" novalidate>
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" type="text" id="username" name="username" autofocus required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-success btn-block">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
